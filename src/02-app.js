@@ -38,3 +38,8 @@ Persona.prototype.constructor = Cliente;
 
 const miguel = new Persona("Miguel", 35000, 123123123);
 console.log(miguel);
+
+Persona.prototype.mostrarTelefono = function () {
+  return `El Télefono de esta persona es: ${this.telefono}`;
+};
+console.log(miguel.mostrarTelefono());
